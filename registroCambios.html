@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Cambios</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .timeline {
+      position: relative;
+
+      margin: 20px 0;
+      border-left: 3px solid #007bff;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -9px;
+      top: 12px;
+      width: 15px;
+      height: 15px;
+      background-color: #007bff;
+      border-radius: 50%;
+    }
+    .date {
+      font-weight: bold;
+      color: #007bff;
+      opacity: 30%;
+    }
+    .name {
+      font-style: italic;
+      color: #333;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .title h1 {
+      font-size: 50px;
+      margin: 0;
+    }
+
+    .title p {
+      opacity: 30%;
+      font-weight: 600;
+      margin: 0;
+      padding-bottom: 20px;
+    }
+  </style>
+  <body>
+    <div class="title">
+      <h1>Changelog</h1>
+      <p>Here's everything have shipped in the past few days</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="date">September 3, 2024</div>
+        <div class="name">Anouncing proyects on Frontend Roadmap</div>
+      </div>
+      <div class="timeline-item">
+        <div class="date">August 28, 2024</div>
+        <div class="name">Build your learnign habits with learning steaks</div>
+      </div>
+      <div class="timeline-item">
+        <div class="date">August 22, 2024</div>
+        <div class="name">Git and GitHub Roadmap</div>
+      </div>
+      <div class="timeline-item">
+        <div class="date">August 30, 2024</div>
+        <div class="name">Submit Your Projects Ideas</div>
+      </div>
+      <div class="timeline-item">
+        <div class="date">August 28, 2024</div>
+        <div class="name">Backend Roadmap</div>
+      </div>
+      <div class="timeline-item">
+        <div class="date">August 22, 2024</div>
+        <div class="name">Usuario Beta</div>
+      </div>
+      <div class="timeline-item">
+        <div class="date">August 20,2024, 2024</div>
+        <div class="name">Changelog page to help you stay in the loop</div>
+      </div>
+  </body>
+</html>
