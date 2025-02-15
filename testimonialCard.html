@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testonial Card</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+      margin: 5px;
+    }
+
+    .card {
+      margin-top: 20px;
+      width: 250px;
+    }
+    .card-1 {
+      position: relative;
+      background-color: #000;
+      color: #fff;
+      border-radius: 15px;
+      padding: 10px;
+    }
+    .card-1::before {
+      content: "";
+      padding: 15px;
+      width: 40px;
+      color: #000;
+
+      position: absolute;
+      background-color: black;
+
+      bottom: -25px;
+      left: -12px;
+      clip-path: polygon(50% 50%, 35% 0, 66% 0);
+    }
+
+    .person {
+      margin-top: 12px;
+      display: flex;
+    }
+
+    .person img {
+      width: 42px;
+      height: auto;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .desc {
+      margin-left: 4px;
+    }
+    /* card 2 */
+    .layout-2 {
+      border-radius: 12px;
+
+      border: 1px solid #000;
+      width: 270px;
+    }
+    .card-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 20px;
+    }
+    /* layout 3 */
+    .layout-3 {
+      width: 520px;
+    }
+    .container {
+      display: flex;
+      gap: 8px;
+    }
+    .img-1 {
+      max-width: 30%;
+      height: auto;
+      border-radius: 10%;
+    }
+
+    .person-1 {
+      background-color: #000a;
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .person-1 p {
+      margin-top: 6px;
+    }
+
+    .star {
+      display: flex;
+    }
+    .star img {
+      width: 42px;
+      clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+
+      outline: 2px solid #fff;
+    }
+  </style>
+  <body>
+    <section class="card">
+      <div class="card-container">
+        <div class="card-1">
+          <p>
+            I have solving all project ideas oon roadmap.sh anh i am surprised
+            how far I have como from where I started
+          </p>
+          <span>Higly Recommended!</span>
+        </div>
+        <div class="person">
+          <img
+            src="https://i.ytimg.com/vi/vdB-8eLEW8g/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGHIgZCgRMA8=&rs=AOn4CLAXsjnhBqS_G2OyVveaM-1vPo2lEA"
+            alt=""
+          />
+          <div class="desc">
+            <h2>Artem Jones</h2>
+            <p>Junior Frontend Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="layout-2">
+      <div class="container-card">
+        <div class="card-2">
+          <p>
+            Since starting my career in 2021, I have only followed one resourde,
+            roadmap.sh, it truly helped me go from 0 to having a job and
+            changing the financial trajectory of my family
+          </p>
+          <div class="person">
+            <img
+              src="https://i.ytimg.com/vi/vdB-8eLEW8g/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGHIgZCgRMA8=&rs=AOn4CLAXsjnhBqS_G2OyVveaM-1vPo2lEA"
+              alt=""
+            />
+
+            <div class="desc">
+              <h2>Artem Jones</h2>
+              <p>Junior Frontend Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="layout-3">
+      <div class="container">
+        <img
+          class="img-1"
+          src="https://i.ytimg.com/vi/vdB-8eLEW8g/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGHIgZCgRMA8=&rs=AOn4CLAXsjnhBqS_G2OyVveaM-1vPo2lEA"
+          alt=""
+        />
+        <div class="person-1">
+          <div class="star">
+            <img
+              src="https://i.ytimg.com/vi/vdB-8eLEW8g/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGHIgZCgRMA8=&rs=AOn4CLAXsjnhBqS_G2OyVveaM-1vPo2lEA"
+              alt=""
+            /><img
+              src="https://i.ytimg.com/vi/vdB-8eLEW8g/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGHIgZCgRMA8=&rs=AOn4CLAXsjnhBqS_G2OyVveaM-1vPo2lEA"
+              alt=""
+            /><img
+              src="https://i.ytimg.com/vi/vdB-8eLEW8g/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGHIgZCgRMA8=&rs=AOn4CLAXsjnhBqS_G2OyVveaM-1vPo2lEA"
+              alt=""
+            /><img
+              src="https://i.ytimg.com/vi/vdB-8eLEW8g/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-BIAC4AOKAgwIABABGHIgZCgRMA8=&rs=AOn4CLAXsjnhBqS_G2OyVveaM-1vPo2lEA"
+              alt=""
+            />
+          </div>
+
+          <h2>Jackie Mackle</h2>
+          <span>Engineering Manager</span>
+          <p>
+            I fing myselft recommending roadmap.sh to all the interness or
+            junior developers. It's a great way to skill up and grow in your
+            career.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
