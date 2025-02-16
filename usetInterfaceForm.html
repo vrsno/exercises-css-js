@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .container {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #000;
+      border-radius: 20px;
+      padding: 20px;
+      gap: 30px;
+    }
+
+    /* form */
+    .myForm {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .myForm input {
+      padding: 10px;
+      width: 300px;
+      border-radius: 10px;
+      border: 1px solid #000;
+    }
+
+    .password-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .myForm .submit {
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    #toggle {
+      visibility: hidden;
+      display: none;
+    }
+    .password {
+      -webkit-text-security: disc;
+    }
+
+    #toggle:checked ~ .password {
+      -webkit-text-security: none;
+    }
+
+    #toggle2:checked ~ .password {
+      -webkit-text-security: none;
+    }
+
+    #toggle2 {
+      visibility: hidden;
+      display: none;
+    }
+
+    /* profile-c */
+    .profile-c {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .completed {
+      display: flex;
+      flex-direction: column;
+      background-color: #ededed;
+      padding: 10px;
+      border-radius: 20px;
+      font-size: 17px;
+    }
+    .ok {
+      text-decoration: line-through;
+      opacity: 30%;
+    }
+
+    /* progress */
+    .progress-circle {
+      margin-left: 20px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: conic-gradient(
+        #0c0c0c 65%,
+        #ddd 0
+      ); /* 65% verde, resto gris */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    /* Texto dentro del círculo */
+    .progress-circle span {
+      background: #fff; /* Fondo blanco para que no se mezcle con la barra */
+      border-radius: 50%;
+      width: 80%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <section class="container">
+      <form class="myForm" id="myForm">
+        <label for="name">Full Name</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="What should we call you?"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="john@doe.com"
+          required
+          aria-required="Email is already taken"
+        />
+        <div class="password-container">
+          <label for="password">Enter Password</label>
+          <input type="checkbox" id="toggle" />
+          <input
+            id="password"
+            class="password"
+            type="text"
+            required
+            placeholder="xxxxxx"
+          />
+          <label for="toggle">Ver</label>
+        </div>
+        <div class="password-container">
+          <label for="password">Confirm Password</label>
+          <input type="checkbox" id="toggle2" />
+          <input
+            id="password"
+            class="password"
+            type="text"
+            placeholder="xxxxxx"
+            required
+          />
+          <label for="toggle2">Ver</label>
+        </div>
+
+        <input class="submit" type="submit" />
+      </form>
+      <div class="profile-c">
+        <div class="percentaje">
+          <div class="progress-circle">
+            <span>65%</span>
+          </div>
+          <p>Profile Completeness</p>
+        </div>
+        <div class="completed">
+          <p class="ok">Create Account</p>
+          <p class="ok">Update Roadmap Progress</p>
+          <p class="ok">Setup Public Profile</p>
+          <p>Complete your Fist project</p>
+          <p>invite your Friends</p>
+        </div>
+      </div>
+    </section>
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Formulario enviado!");
+        });
+    </script>
+  </body>
+</html>
