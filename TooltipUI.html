@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tooltip ui</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .navbar-list {
+      display: flex;
+
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .navbar-item {
+      list-style: circle;
+      position: relative;
+    }
+
+    .navbar-item:first-child {
+      list-style: none;
+      transition: backgroundColor 2s;
+    }
+    .toolTip::before {
+      content: "hola como estas esto es un toolTip1";
+      position: absolute;
+      top: 30px;
+      left: -130px;
+      text-align: center;
+      width: 300px;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #000;
+      color: #fff;
+      font-weight: 100;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .toolTip:hover::before {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .toolTip2::before {
+      content: "hola como estas esto es un toolTip1";
+      position: absolute;
+      top: 30px;
+      left: -130px;
+      text-align: center;
+      width: 300px;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #000;
+      color: #fff;
+      font-weight: 100;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .toolTip2:hover::before {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .toolTip3::before {
+      content: "hola como estas esto es un toolTip1";
+      position: absolute;
+      top: 30px;
+      left: -130px;
+      text-align: center;
+      width: 300px;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #000;
+      color: #fff;
+      font-weight: 100;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .toolTip3:hover::before {
+      opacity: 1;
+      visibility: visible;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item toolTip">
+            <a class="navbar-link" href="#">Home</a>
+          </li>
+          <li class="navbar-item toolTip2">
+            <a class="navbar-link" href="#">Projects</a>
+          </li>
+          <li class="navbar-item toolTip3">
+            <a class="navbar-link" href="#">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
