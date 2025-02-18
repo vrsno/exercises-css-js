@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .list {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 20px;
+    }
+
+    .item {
+      opacity: 30%;
+    }
+
+    .clicked {
+      opacity: 100%;
+      text-decoration: underline;
+    }
+
+    .tab1 {
+      background-color: yellow;
+      text-align: center;
+      font-size: 20px;
+      padding: 8px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .tab2 {
+      background-color: #48e;
+      text-align: center;
+      font-size: 20px;
+      padding: 8px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .tab3 {
+      background-color: red;
+      text-align: center;
+      font-size: 20px;
+      padding: 8px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .tab4 {
+      background-color: gray;
+      text-align: center;
+      font-size: 20px;
+      padding: 8px;
+      border-radius: 20px;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="list">
+          <li class="item clicked" id="first">First Tab</li>
+          <li class="item" id="second">Second Tab</li>
+          <li class="item" id="third">Third Tab</li>
+          <li class="item" id="fourth">Fourth Tab</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="tab1 tab" id="tab1">
+      <h2>First Tab</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci enim
+        rem quidem iste totam aspernatur, veritatis ut iusto assumenda obcaecati
+        vitae, ea distinctio eligendi ab quia earum nostrum ipsa. Et.
+      </p>
+    </section>
+    <section class="tab2 tab" id="tab2">
+      <h2>Second Tab</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci enim
+        rem quidem iste totam aspernatur, veritatis ut iusto assumenda obcaecati
+        vitae, ea distinctio eligendi ab quia earum nostrum ipsa. Et.
+      </p>
+    </section>
+    <section class="tab3 tab" id="tab3">
+      <h2>Third Tab</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci enim
+        rem quidem iste totam aspernatur, veritatis ut iusto assumenda obcaecati
+        vitae, ea distinctio eligendi ab quia earum nostrum ipsa. Et.
+      </p>
+    </section>
+    <section class="tab4 tab" id="tab4">
+      <h2>Fourth Tab</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci enim
+        rem quidem iste totam aspernatur, veritatis ut iusto assumenda obcaecati
+        vitae, ea distinctio eligendi ab quia earum nostrum ipsa. Et.
+      </p>
+    </section>
+  </body>
+  <script src="code.js"></script>
+</html>
