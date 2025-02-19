@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acordeon</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+    }
+    .question-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      padding: 10px;
+    }
+    .question-container h3 {
+      position: relative;
+      background-color: #000;
+      color: #fff;
+      border: 1px solid #000;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+    .question-container h3 button {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #fff;
+      color: #000;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      border: none;
+    }
+
+    .question-container h3 button:hover {
+      background-color: red;
+    }
+
+    .response {
+      background-color: #ededed;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <section>
+      <div class="container">
+        <div class="question-container">
+          <h3>What is Roadmap.sh <button class="btn">show</button></h3>
+
+          <p class="response">
+            roadmap.sh is a collaborative effort to create learning paths,
+            guides, project ideas, and other content to help developers grow in
+            their careers.
+          </p>
+        </div>
+
+        <div class="question-container">
+          <h3>
+            What are the plans for roadmap.sh <button class="btn">show</button>
+          </h3>
+          <p class="response">
+            roadmap.sh is a collaborative effort to create learning paths,
+            guides, project ideas, and other content to help developers grow in
+            their careers.
+          </p>
+        </div>
+
+        <div class="question-container">
+          <h3>How is roadmap.sh built <button class="btn">show</button></h3>
+          <p class="response">
+            roadmap.sh is a collaborative effort to create learning paths,
+            guides, project ideas, and other content to help developers grow in
+            their careers.
+          </p>
+        </div>
+
+        <div class="question-container">
+          <h3>
+            Can I use roadmap.sh in my team? <button class="btn">show</button>
+          </h3>
+          <p class="response">
+            roadmap.sh is a collaborative effort to create learning paths,
+            guides, project ideas, and other content to help developers grow in
+            their careers.
+          </p>
+        </div>
+
+        <div class="question-container">
+          <h3>
+            Is roadmap.sh really the 7th most starred project on GitHub?
+            <button class="btn">show</button>
+          </h3>
+          <p class="response">
+            roadmap.sh is a collaborative effort to create learning paths,
+            guides, project ideas, and other content to help developers grow in
+            their careers.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="code.js"></script>
+</html>
