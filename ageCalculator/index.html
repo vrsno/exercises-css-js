@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datepicker</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/js-datepicker/dist/datepicker.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.3/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-datepicker@latest/dist/datepicker.min.js"></script>
+    <script src="code.js" defer></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        border: 1px solid #000;
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+
+      .age-cont {
+        margin-top: 10px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 3px;
+      }
+      .age-cont p {
+        margin-bottom: 5px;
+      }
+      .input {
+        padding: 6px;
+        border-radius: 6px;
+        border: 2px solid #000;
+      }
+
+      .age-cont button {
+        background-color: #643434;
+        color: #fff;
+        padding: 5px;
+        border: 1px solid #000;
+        border-radius: 7px;
+      }
+      #btn:hover {
+        background-color: #c24545;
+      }
+
+      .result {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Age Calculator</h1>
+      <div class="age-cont">
+        <p>Enter Your bith Date:</p>
+        <input type="text" class="input" placeholder="21/11/2002" />
+        <button id="btn">calculate</button>
+      </div>
+
+      <p>You are <span class="result">21 Years 10 months</span> old</p>
+    </div>
+  </body>
+</html>

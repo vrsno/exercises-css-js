@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "js-datepicker": "^5.18.3",
+    "luxon": "^3.5.0"
+  }
+}
