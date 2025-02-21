@@ -1,0 +1,45 @@
+{
+    "preguntas": [
+      {
+        "pregunta": "¿Qué es JavaScript?",
+        "respuesta": "JavaScript es un lenguaje de programación utilizado para crear interactividad en sitios web."
+      },
+      {
+        "pregunta": "¿Qué es el DOM en JavaScript?",
+        "respuesta": "El DOM (Document Object Model) es una representación en árbol de la estructura de un documento HTML que JavaScript puede manipular."
+      },
+      {
+        "pregunta": "¿Cuál es la diferencia entre `let`, `const` y `var`?",
+        "respuesta": "`var` tiene alcance de función, mientras que `let` y `const` tienen alcance de bloque. `const` no permite reasignación después de la declaración."
+      },
+      {
+        "pregunta": "¿Cómo se define una función en JavaScript?",
+        "respuesta": "Se puede definir una función con `function nombre() {}` o con una función de flecha `const nombre = () => {}`."
+      },
+      {
+        "pregunta": "¿Qué es una promesa en JavaScript?",
+        "respuesta": "Una promesa es un objeto que representa una operación asíncrona y puede estar en estado pendiente, resuelta o rechazada."
+      },
+      {
+        "pregunta": "¿Cómo se usa `fetch()` en JavaScript?",
+        "respuesta": "`fetch()` se usa para hacer solicitudes HTTP y devuelve una promesa. Ejemplo: `fetch('url').then(res => res.json()).then(data => console.log(data))`."
+      },
+      {
+        "pregunta": "¿Qué hace `map()` en un array?",
+        "respuesta": "`map()` crea un nuevo array aplicando una función a cada elemento del array original."
+      },
+      {
+        "pregunta": "¿Cómo se convierte un string en número en JavaScript?",
+        "respuesta": "Se puede usar `Number()`, `parseInt()`, `parseFloat()` o el operador `+` antes del string."
+      },
+      {
+        "pregunta": "¿Qué es el operador `===` en JavaScript?",
+        "respuesta": "`===` es el operador de comparación estricta que compara tanto el valor como el tipo de dato."
+      },
+      {
+        "pregunta": "¿Para qué se usa `async/await`?",
+        "respuesta": "`async/await` se usa para escribir código asíncrono de manera más clara y evitar el uso excesivo de `.then()`."
+      }
+    ]
+  }
+  
